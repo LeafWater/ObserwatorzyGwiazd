@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ObserwatorzyGwiazd.Zodiak"
+             BackgroundImage="tlo.jpg">
+    <NavigationPage.TitleView>
+        <Label Text="Obserwatorzy Nieba" VerticalTextAlignment="Center"/>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Label
+                Text="Sprawdź jak wygląda gwiazdozbiór Twojego znaku Zodiaku."
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Grid.Row="0"
+                FontSize="Large" 
+                TextColor="White"
+                FontFamily="Arial"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center"/>
+
+            <Picker
+                x:Name="pickerZodiak"
+                Title="Wybierz swój znak Zodiaku" 
+                BackgroundColor="#b3cbe6"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Grid.Row="1"
+                SelectedIndexChanged="PickerZodiak_SelectedIndexChanged">
+                <Picker.ItemsSource >
+                    <x:Array Type="{x:Type x:String}" >
+                        <x:String>Baran</x:String>
+                        <x:String>Byk</x:String>
+                        <x:String>Bliźnięta</x:String>
+                        <x:String>Rak</x:String>
+                        <x:String>Lew</x:String>
+                        <x:String>Panna</x:String>
+                        <x:String>Waga</x:String>
+                        <x:String>Skorpion</x:String>
+                        <x:String>Strzelec</x:String>
+                        <x:String>Koziorożec</x:String>
+                        <x:String>Wodnik</x:String>
+                        <x:String>Ryby</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+                
+            </Picker>
+
+            <Image
+                x:Name="obrazZodiak" 
+                Grid.Column="0"
+                Grid.Row="2"
+                Grid.RowSpan="2"
+                Source="tloPrzycisku.jpg"
+                BackgroundColor="#00001a"/>
+
+            <Label
+                x:Name="nazwaZodiak"
+                Grid.Column="1"
+                Grid.Row="2" 
+                FontSize="Medium"
+                TextColor="White"
+                FontAttributes="Italic"
+                BackgroundColor="#884dff"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center"/>
+
+            <Label
+                x:Name="opisZodiak"
+                Grid.Column="1"
+                Grid.Row="3" 
+                BackgroundColor="White"/>
+            
+            <!-- enable ; active after picking Zodiac -->
+            <Button 
+                x:Name="zodiakWiecej"
+                Text="Kliknij, aby dowiedzieć się, jak znaleźć gwiazdozbiór."
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Grid.Row="4"
+                BackgroundColor="Gold"
+                Clicked="ZodiakWiecej_Clicked"/>
+                
+                
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

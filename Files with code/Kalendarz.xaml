@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ObserwatorzyGwiazd.Kalendarz"
+             BackgroundImage="tlo.jpg">
+    <NavigationPage.TitleView>
+        <Label Text="Obserwatorzy Nieba" VerticalTextAlignment="Center"/>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="0.5*"/>
+                <RowDefinition Height="5*"/>
+               <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Label
+                Text="Astronomiczne wydarzenia 2019"
+                Grid.Column="0"
+                Grid.ColumnSpan="3"
+                Grid.Row="0"
+                FontSize="Large" 
+                TextColor="White"
+                FontFamily="Arial"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center"/>
+
+            <Picker
+                x:Name="pickerKalendarz"
+                Title="Wybierz miesiąc:" 
+                BackgroundColor="#b3cbe6"
+                Grid.Column="0"
+                Grid.ColumnSpan="3"
+                Grid.Row="1"
+                SelectedIndexChanged="PickerKalendarz_SelectedIndexChanged">
+                <Picker.ItemsSource >
+                    <x:Array Type="{x:Type x:String}" >
+                        <x:String>Styczeń</x:String>
+                        <x:String>Luty</x:String>
+                        <x:String>Marzec</x:String>
+                        <x:String>Kwiecień</x:String>
+                        <x:String>Maj</x:String>
+                        <x:String>Czerwiec</x:String>
+                        <x:String>Lipiec</x:String>
+                        <x:String>Sierpień</x:String>
+                        <x:String>Wrzesień</x:String>
+                        <x:String>Październik</x:String>
+                        <x:String>Listopad</x:String>
+                        <x:String>Grudzień</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Button
+                x:Name="miesiacWczesniej"
+                Text="&#x003C;" 
+                FontFamily="Segoe UI Symbol"
+                Grid.Column="0"
+                Grid.Row="2"
+                FontSize="Medium"
+                TextColor="DarkBlue"
+                BackgroundColor="Gold"
+                Clicked="MiesiacWczesniej_Clicked"/>
+
+            <Button
+                x:Name="miesiacDalej"
+                Text=">"
+                Grid.Column="2"
+                Grid.Row="2"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                TextColor="DarkBlue"
+                BackgroundColor="Gold"
+                Clicked="MiesiacDalej_Clicked"/>
+
+             <Label
+                x:Name="miesiac"
+                Text="MIESIĄC"
+                Grid.Column="1"
+                Grid.Row="2" 
+                FontSize="Medium"
+                BackgroundColor="White"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center"/>
+
+            <Label
+                Text="MIASTO"
+                Grid.Column="0"
+                Grid.Row="3" 
+                BackgroundColor="AliceBlue"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center"/>
+            <Label
+                Text="NAZWA"
+                Grid.Column="1"
+                Grid.Row="3" 
+                BackgroundColor="AliceBlue"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center"/>
+            <Label
+                Text="DATA"
+                Grid.Column="2"
+                Grid.Row="3" 
+                BackgroundColor="AliceBlue"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center"/>
+
+            <Label
+                x:Name="poleWydarzenMiasto"
+                Text="Tu pojawi się lista miast..."
+                Grid.Column="0"
+                Grid.Row="4" 
+                BackgroundColor="White"
+                HorizontalTextAlignment="Center"/>
+            <Label
+                x:Name="poleWydarzenNazwa"
+                Text="Tu pojawi się lista nadchodzących wydarzeń..."
+                Grid.Column="1"
+                Grid.Row="4" 
+                BackgroundColor="White"/>
+            <Label
+                x:Name="poleWydarzenData"
+                Text="Tu pojawi się lista dat..."
+                Grid.Column="2"
+                Grid.Row="4" 
+                BackgroundColor="White"/>
+          <Button
+              x:Name="dajDane"
+              Text="Uaktualnij dane"
+              Grid.Column ="1"
+              Grid.Row="5"
+              TextColor="White"
+              Clicked="DajDane_Clicked"
+              />
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

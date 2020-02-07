@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<wydarzenia>
+  <miesiac indeks="1" >
+    <w miasto="Cała Polska" data="04.01."> Maksimum Kwadrantydy </w>
+    <w miasto="Katowice" data="13.01."> "3 Śląski Festiwal Nauki" </w>
+    <w miasto="Cała Polska" data="21.01."> Superksiężyc</w>
+    <w miasto="Warszawa" data="24.01."> "SpaceHUB: Mars" </w>
+  </miesiac>
+  <miesiac indeks="2" >
+    <w miasto="Cała Polska" data="02.02."> Księżyc zakrywa Saturn</w>
+    <w miasto="Warszawa" data="07.02."> "Poza heliosferę: Voyager" </w>
+    <w miasto="Kraków" data="08.02."> "SpaceTech" </w>
+    <w miasto="Strasbourg" data="23.02."> "SpaceUP" </w>
+    <w miasto="Warszawa" data="27.02."> "SpaceHUB" </w>
+  </miesiac>
+  <miesiac indeks="3" >
+    <w miasto="Wrocław" data="04.03."> "Gwiezdne korale" </w>
+    <w miasto="Warszawa" data="08.03."> "Galaktyka kobiet #3" </w>
+    <w miasto="Wrocław" data="11.03."> Warsztaty z solarigrafii</w>
+    <w miasto="Warszawa" data="27.03."> "SpaceHUB: Księżyc" </w>
+  </miesiac>
+  <miesiac indeks="4" >
+    <w miasto="Świat" data="04.04.">2. zbliżenie sondy Parker</w>
+    <w miasto="Warszawa" data="06.04."> Seminarium – "Mars" </w>
+    <w miasto="Warszawa" data="11.04."> "Inżynieria ryzyk" </w>
+    <w miasto="Warszawa" data="25.04."> "European SpaceTech2019" </w>
+    <w miasto="Warszawa" data="25.04."> "SpaceHUB" </w>
+    <w miasto="Toruń" data="28.04."> "Toruński Festiwal Nauki" </w>
+  </miesiac>
+	<miesiac indeks="5" >
+    <w miasto="Cała Polska" data="06.05."> Maksimum roju Eta</w>
+		<w miasto="Toruń" data="08.05."> "Górnictw0 kosmiczne" </w>
+		<w miasto="Warszawa" data="12.05."> "Pulsary – CAMK" </w>
+		<w miasto="Kraków" data="14.05."> "Kosmogadka: Planety" </w>
+    <w miasto="Kraków" data="16.05."> "Konferencja Górnictwa Kosmicz." </w>
+    <w miasto="Toruń" data="12.05."> "Pulsary - CAMK" </w>
+    <w miasto="Toruń" data="22.05."> "Początek ery kosmicznej" </w>
+    <w miasto="Kraków" data="24.05."> "Wieczór z gwiazdami" </w>
+    <w miasto="Warszawa" data="27.05."> "Portret Wszechświata–CAMK" </w>
+	</miesiac>
+	<miesiac indeks="6" >
+		<w miasto="Cała Polska" data="01.06."> Koniunkcja Księżyc/Wenus</w>
+    <w miasto="Toruń" data="12.06."> "Początek ery kosmicznej" </w>
+		<w miasto="Cała Polska" data="16.06.">Koniunkcja Księżyc/Jowisz</w>
+		<w miasto="Wrocław" data="18.06."> "Space Adventure" </w>
+    <w miasto="Kraków" data="21.12."> "100 godzin astronomii" </w>
+    <w miasto="Warszawa" data="22.06."> "Gateway to Space" </w>
+    <w miasto="Toruń" data="25.06."> "Początek ery kosmicznej" </w>
+	</miesiac>
+	<miesiac indeks="7" >
+    <w miasto="Kraków" data="03.07."> "Wieczór z gwiazdami" </w>
+    <w miasto="Świat" data="13.07."> Koniunkcja Księżyc/Jowisz</w>
+    <w miasto="Świat" data="05.07."> Ziemia najdalej Słońca</w>
+		<w miasto="Europa" data="16.07."> Zaćmienie Księżyca</w>
+		<w miasto="Świat" data="28.07."> Maksimum meteorów z roju delta Akwarydów </w>
+	</miesiac>
+  <miesiac indeks="8" >
+    <w miasto="Kraków" data="03.08."> Zlot fizyków</w>
+    <w miasto="Cała Polska" data="12.08."> Maksimum roju Perseidy </w>
+    <w miasto="Świat" data="24.08."> Koniunkcja Wenus i Mars </w>
+    <w miasto="Kraków" data="30.08."> "Wieczór z gwiazdami; 100 godzin astronomii" </w>
+    
+  </miesiac>
+  <miesiac indeks="9" >
+    <w miasto="Świat" data="01.09.">3. zbliżenie sondy Parker</w>
+    <w miasto="Wrocław" data="10.09."> "Space Adventure" </w>
+    <w miasto="Lublin" data="14.09."> Lubelski Festiwal Nauki </w>
+    <w miasto="Kraków" data="20.09."> "Wieczór z gwiazdami" </w>
+    <w miasto="Świat" data="28.09."> Koniunkcja Księżyc i Mars </w>
+  </miesiac>
+  <miesiac indeks="10" >
+    <w miasto="Kraków" data="05.10."> II Zlot Fizyków </w>
+    <w miasto="Kraków" data="11.10."> "100 godzin astronomii" </w>
+    <w miasto="Cała Polska" data="21.10."> Maksimum roju Orionidy  </w>
+    <w miasto="Wrocław" data="20.10."> Dolnośląski Festiwal Nauki </w>
+    <w miasto="Kraków" data="27.12."> "Wieczór z gwiazdami" </w>
+    <w miasto="Świat" data="28.10."> Uran w opozycji </w>
+  </miesiac>
+  <miesiac indeks="11" >
+    <w miasto="Świat" data="02.11."> Koniunkcja Księżyc i Saturn </w>
+    <w miasto="Cała Polska" data="06.11."> Maksimum roju Taurydów  </w>
+    <w miasto="Cała Polska" data="17.11."> Maksimum roju Leonidów  </w>
+    <w miasto="Kraków" data="19.12."> "Wieczór z gwiazdami; 100 godzin astronomii" </w>
+  </miesiac>
+  <miesiac indeks="12" >
+    <w miasto="Świat" data="11.12."> Koniunkcja Wenus i Saturn </w>
+    <w miasto="Cała Polska" data="13.12."> Maksimum roju Geminidów  </w>
+    <w miasto="Cała Polska" data="22.12."> Maksimum roju Ursydów  </w>
+    <w miasto="Świat" data="26.12."> Koniunkcja Księżyc/Jowisz</w>
+  </miesiac> 
+  
+  <faza indeks="1" >
+    Nów – jedna z faz Księżyca, w której Księżyc znajduje się między Słońcem a Ziemią, czyli jest w koniunkcji ze Słońcem patrząc z Ziemi. W tej pozycji cała strona Księżyca widoczna z Ziemi jest w cieniu, wobec czego Księżyc nie jest widoczny gołym okiem.
+  </faza>
+  <faza indeks="2" >
+    Zaczyna się po około kilkunastu godzinach po nowiu. Zaczyna się rysować z prawej strony sierp Księżyca, ale po 3,6dniach wyraźnie widać, że Księżyc z prawej strony przybrał kształt sierpa, jest to tzw. Młody Księżyc ( Księżyca przybywa). Jak można zaobserwować, tarcza Księżyca przedzielona jest cieniem. Granicę między cieniem a oświetloną stroną Księżyca, nazywamy terminatorem.
+  </faza>
+  <faza indeks="3" >
+    Pierwsza kwadra – w astronomii, faza Księżyca, w której Ziemia, Księżyc i Słońce tworzą ze sobą kąt prosty. Księżyc w tym czasie zbliża się do pełni. W tym momencie, dla obserwatorów na Ziemi widoczna jest tylko wschodnia część tarczy Księżyca. Księżyc wschodzi w środku dnia i zachodzi w środku nocy, przez co można go bardzo wygodnie obserwować.
+  </faza>
+  <faza indeks="4" >
+    Jest to faza po pierwszej kwadrze, w której Księżyc zbliża się do pełni i oświetlona jest już większa część jego tarczy.
+  </faza>
+	<faza indeks="5" >
+    Pełnia – faza księżyca, podczas której Księżyc znajduje się w opozycji do Słońca, tzn. kiedy Księżyc znajduje się po przeciwnej stronie Ziemi niż Słońce. Dokładniej, pełnia występuje wtedy, gdy długości ekliptyczne Słońca i Księżyca różnią się o 180 stopni.
+	</faza>
+	<faza indeks="6" >
+	Obecna faza Księżyca to "Księżyc Garbaty". Oświetlona część Księżyca maleje (ubywa). Widoczna jest jeszcze większa część zachodniej tarczy Księżyca, który zmierza w stronę nowiu.
+	</faza>
+	<faza indeks="7" >
+    Ostatnia kwadra – faza Księżyca, w której Ziemia, Księżyc i Słońce tworzą ze sobą kąt prosty. W tym momencie, dla obserwatorów na Ziemi widoczna jest jako oświetlona tylko zachodnia część widocznej strony Księżyca. Podczas kwadr Słońce oświetla część powierzchni Księżyca zwróconą w stronę Ziemi pod małym kątem, więc jego formy morfologiczne w tym obszarze są wówczas bardzo dobrze widoczne. 
+	</faza>
+  <faza indeks="8" >
+    Sierp ubywający to ostatnia, ósma faza Księżyca. Nazywana jest też Starym Księżycem. Widać niewielką część Księżyca, gdyż oświetlony jest tylko wąski brzeg księżycowej tarczy. 
+  </faza>
+</wydarzenia>

@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ObserwatorzyGwiazd.WschodyZachody">
+    <NavigationPage.TitleView>
+        <Label Text="Obserwatorzy Nieba" VerticalTextAlignment="Center"/>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <RelativeLayout>
+            <Grid RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+            RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="0.7*"/>
+                    <RowDefinition Height="1.4*"/>
+                </Grid.RowDefinitions>
+
+                <Label
+                    x:Name="dataDzis"
+                    Text="Dziś: "
+                    Grid.Column="0"
+                    Grid.ColumnSpan="3"
+                    Grid.Row="0" 
+                    TextColor="White"
+                    BackgroundColor="#12346b"
+                    VerticalTextAlignment="Center"
+                    HorizontalTextAlignment="Center"
+                    FontSize="Medium"/>
+
+                <Label
+                    x:Name="polePrzesileniaL"
+                    Text="30 dni do przesilenia letniego"
+                    Grid.Column="0"
+                    Grid.Row="1" 
+                    BackgroundColor="#ffcc00"
+                    VerticalTextAlignment="Center"
+                    HorizontalTextAlignment="Center"/>
+                <Image
+                    Grid.Column="1"
+                    Grid.Row="1"
+                    Source="przesilenia.jpg" 
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="CenterAndExpand"></Image>
+                <Label
+                    x:Name="polePrzesileniaZ"
+                    Text="Przesilenie zimowe 330 dni temu"
+                    Grid.Column="2"
+                    Grid.Row="1" 
+                    BackgroundColor="AliceBlue"
+                    VerticalTextAlignment="Center"
+                    HorizontalTextAlignment="Center"
+                    />
+
+                <Image
+                Grid.Column="0"
+                Grid.Row="2"
+                Grid.RowSpan="3"
+                Source="slonce.jpg" 
+                BackgroundColor="White"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="CenterAndExpand"/>
+
+                <Label
+                Text="Wschód: "
+                Grid.Column="1"
+                Grid.Row="2" 
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center"/>
+                <Label
+                Text="Górowanie: "
+                Grid.Column="1"
+                Grid.Row="3" 
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center"/>
+                <Label
+                Text="Zachód: "
+                Grid.Column="1"
+                Grid.Row="4" 
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center"/>
+          
+                <Label
+                x:Name="poleWschodSl"
+                Grid.Column="2"
+                Grid.Row="2" 
+                FontSize="Medium"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center"/>
+                <Label
+                x:Name="poleGoraSl"
+                Grid.Column="2"
+                Grid.Row="3" 
+                FontSize="Medium"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center"/>
+                <Label
+                x:Name="poleZachodSl"
+                Grid.Column="2"
+                Grid.Row="4" 
+                FontSize="Medium"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center"/>
+                
+                <Label
+                    x:Name="poleDlDnia"
+                    Text="Długość dnia wynosi : 7h"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="3"
+                    Grid.Row="5" 
+                    TextColor="White"
+                    BackgroundColor="#12346b"
+                    VerticalTextAlignment="Center"
+                    HorizontalTextAlignment="Center"
+                    />
+
+                <Entry
+                x:Name="dzienWZ"
+                Grid.Column="0"
+                Grid.Row="6"
+                BackgroundColor="AliceBlue"
+                Placeholder="dd"
+                Keyboard="Numeric"/>
+                <Entry
+                x:Name="miesiacWZ"
+                Grid.Column="1"
+                Grid.Row="6"
+                BackgroundColor="AliceBlue"
+                Placeholder="mm" 
+                Keyboard="Numeric"/>
+                <Entry
+                x:Name="rokWZ"
+                Grid.Column="2"
+                Grid.Row="6"
+                BackgroundColor="AliceBlue"
+                Placeholder="rrrr" 
+                Keyboard="Numeric"/>
+                <Button
+                x:Name="slonceWZ"
+                Text="Sprawdź godziny Słońca dla nowej daty."
+                Grid.Column="0"
+                Grid.ColumnSpan="3"
+                Grid.Row="7"
+                BackgroundColor="#ffcc00"
+                Clicked="SlonceWZ_Clicked"/>
+                
+            </Grid>
+        </RelativeLayout>
+    </ContentPage.Content>
+</ContentPage>

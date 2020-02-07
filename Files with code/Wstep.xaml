@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ObserwatorzyGwiazd.Wstep"
+             BackgroundImage="tlo.jpg">
+    <NavigationPage.TitleView>
+        <Label Text="Obserwatorzy Nieba" VerticalTextAlignment="Center"/>
+    </NavigationPage.TitleView>
+
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="0.3*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="0.3*"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Label 
+                Text="Witaj, Obserwatorze Nieba!"
+                Grid.Column="0"
+                Grid.ColumnSpan="3"
+                Grid.Row="0"
+                FontSize="Large"
+                TextColor="White"
+                FontFamily="Arial"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center" />
+
+            <Label 
+                Text="Wybierz swoje miasto z listy lub pozwól automatycznie pobrać swoją lokalizację."
+                Grid.Column="0"
+                Grid.ColumnSpan="3"
+                Grid.Row="1"
+                TextColor="White"
+                FontFamily="Arial"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center" />
+
+            <Picker
+                x:Name="pickerMiasto"
+                Title="Wybierz miasto" 
+                TextColor="White"
+                BackgroundColor="#b3cbe6"
+                Grid.Column="1"
+                Grid.Row="2"
+                SelectedIndexChanged="PickerMiasto_SelectedIndexChanged">
+                <Picker.ItemsSource >
+                    <x:Array Type="{x:Type x:String}" >
+                        <x:String>Katowice</x:String>
+                        <x:String>Warszawa</x:String>
+                        <x:String>Gdańsk</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+            
+            <Label 
+                Text="lub"
+                Grid.Column="0"
+                Grid.ColumnSpan="3"
+                Grid.Row="3"
+                TextColor="White"
+                FontFamily="Arial"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center" />
+
+            <Button
+                x:Name="pobierzLokalizacje"
+                Text="Pobierz moją lokalizację."
+                Grid.Column="1"
+                Grid.Row="4"
+                BackgroundColor="#b3cbe6"
+                Clicked="PobierzLokalizacje_Clicked" />
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

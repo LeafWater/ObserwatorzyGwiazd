@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ObserwatorzyGwiazd.FazyKsiezyca"
+             BackgroundImage="tlo.jpg">
+    <NavigationPage.TitleView>
+        <Label Text="Obserwatorzy Nieba" VerticalTextAlignment="Center"/>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="0.8*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Label
+                Text="Sprawdź, jaka jest faza księżyca."
+                Grid.Column="0"
+                Grid.ColumnSpan="4"
+                Grid.Row="0"
+                TextColor="White"
+                FontFamily="Arial"
+                FontSize="Large"  
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center"/>
+            
+            <Label
+                x:Name="nazwaFazy"
+                Text="Faza Księżyca"
+                Grid.Column="1"
+                Grid.ColumnSpan="2"
+                Grid.Row="2" 
+                FontSize="Medium"
+                TextColor="White"
+                FontAttributes="Bold"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center"/>
+
+            <Image
+                x:Name="obrazFazy"
+                Source="ksiezyc.jpg"
+                Grid.Column="0"
+                Grid.ColumnSpan="4"
+                Grid.Row="1" />
+
+            <Label
+                x:Name="opisFazy"
+                Text="Tu pojawi się opis..."
+                Grid.Column="0"
+                Grid.ColumnSpan="4"
+                Grid.Row="3" 
+                BackgroundColor="AliceBlue"/>    
+            
+            <Label
+                Text="Wprowadź inną datę."
+                Grid.Column="0"
+                Grid.Row="4" 
+                TextColor="White"
+                FontAttributes="Bold"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center"/>
+
+            <Entry 
+                x:Name="dzienKs"
+                Grid.Column="1"
+                Grid.Row="4"
+                Placeholder="dd"
+                BackgroundColor="AliceBlue"
+                Keyboard="Numeric"
+                HorizontalTextAlignment="Center"/>
+            <Entry 
+                x:Name="miesiacKs"
+                Grid.Column="2"
+                Grid.Row="4"
+                Placeholder="mm"
+                BackgroundColor="AliceBlue"
+                Keyboard="Numeric"
+                HorizontalTextAlignment="Center" />
+            <Entry 
+                x:Name="rokKs"
+                Grid.Column="3"
+                Grid.Row="4"
+                Placeholder="rrrr"
+                BackgroundColor="AliceBlue"
+                Keyboard="Numeric"
+                HorizontalTextAlignment="Center"/>
+       
+            <Button
+                x:Name="dataKs"
+                Text="Zatwierdź" 
+                Grid.Column="0"
+                Grid.ColumnSpan="4"
+                Grid.Row="5"
+                BackgroundColor="Gold"
+                FontAttributes="Bold"
+                Clicked="DataKs_Clicked"/>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
